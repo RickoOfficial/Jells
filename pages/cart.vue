@@ -1,8 +1,7 @@
 <template>
-	<main class="index">
+	<main class="cart">
 		<div class="container">
-			<h1>Главная</h1>
+			<h1>Cart</h1>
 		</div>
-
 	</main>
 </template>

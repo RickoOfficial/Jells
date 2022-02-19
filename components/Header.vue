@@ -1,13 +1,13 @@
 <template>
 	<div class="Header">
-		<div class="container">
-			<header>
-				<div class="logo">🏪</div>
-				<nav>
-					<NuxtLink to="/">Главная</NuxtLink>
-				</nav>
-			</header>
-		</div>
+		<header class="d-flex justify-content-between align-items-center">
+			<div class="logo"><NuxtLink to="/">🏪</NuxtLink></div>
+			<nav>
+				<NuxtLink to="/" class="">Главная</NuxtLink>
+				<NuxtLink to="/catalog" class="">Каталог</NuxtLink>
+				<NuxtLink to="/cart" class="">🛒</NuxtLink>
+			</nav>
+		</header>
 	</div>
 </template>
 
@@ -15,6 +15,28 @@
 	.Header {
 		position: sticky;
 		top: 1rem;
-		background: #f003;
+		margin-bottom: 2rem;
+
+		header {
+			width: 80%;
+			margin: 0 auto;
+			padding: 0.5rem 2rem;
+			background: #fff9;
+			border: 1px solid var(--black);
+			border-radius: 1rem;
+			backdrop-filter: blur(5px);
+
+			.logo {
+				font-size: 2rem;
+			}
+			nav {
+				height: fit-content;
+				
+				a {
+					margin-left: 1.5rem;
+					font-size: 1.5rem;
+				}
+			}
+		}
 	}
 </style>

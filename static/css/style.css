@@ -1,0 +1,39 @@
+:root {
+	--red: #F20519;
+	--purple: #5B48D9;
+	--light-mint: #CEF2F2;
+	--mint: #04D9C4;
+	--white: #F0F0F2;
+	--black: #1F1F26;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+}
+html {
+	background: var(--white);
+}
+a { color: var(--black); transition: .2s; }
+a:hover { color: var(--red); }
+
+.btn {
+	padding: 1rem 2rem;
+	border: 1px solid #0000;
+	border-radius: 1rem;
+	font-size: 1rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn-red {
+	color: var(--white);
+	background: var(--red);
+	border-color: var(--red);
+}
+.btn-red-outline {
+	color: var(--black);
+	background: var(--white);
+	border-color: var(--red);
+}
