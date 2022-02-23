@@ -18,8 +18,13 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+// Товары
 const productRoutes = require('./src/routes/Product')
 app.use('/api/products', productRoutes)
+// Отзывы
+const reviewsRoutes = require('./src/routes/Review')
+app.use('/api/reviews', reviewsRoutes)
+
 
 async function start() {
 	const nuxt = await loadNuxt( isDev ? 'dev' : 'start' )

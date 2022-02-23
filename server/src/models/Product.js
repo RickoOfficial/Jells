@@ -7,6 +7,10 @@ const productSchema = new Schema({
 		required: true,
 		unique: true
 	},
+	article: {
+		type: String,
+		default: ''
+	},
 	name: {
 		type: String,
 		required: true
@@ -20,8 +24,8 @@ const productSchema = new Schema({
 		default: ''
 	},
 	price: {
-		type: String,
-		default: '-1'
+		type: Number,
+		default: 0
 	},
 	quantity: {
 		type: Number,
@@ -39,6 +43,10 @@ const productSchema = new Schema({
 		type: Boolean,
 		default: true
 	},
+	reviews: [{
+		ref: 'reviews',
+		type: Schema.Types.ObjectId
+	}]
 	// category: {
 	// 	ref
 	// }
