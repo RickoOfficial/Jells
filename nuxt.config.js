@@ -19,14 +19,17 @@ export default {
 			{ name: 'format-detection', content: 'telephone=no' }
 		],
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+			{ href: '/favicon.ico', rel: 'icon', type: 'image/x-icon', async: true },
+			{ href: '/css/bootstrap-grid.min.css', rel: 'stylesheet', async: true },
+			{ href: '/css/style.css', rel: 'stylesheet', async: true },
+			{ href: '/css/nouislider.min.css', rel: 'stylesheet', async: true }
+		],
+		scripts: [
 		]
 	},
 
 	// Global CSS: https://go.nuxtjs.dev/config-css
 	css: [
-		'@/static/css/bootstrap-grid.min.css',
-		'@/static/css/style.css',
 	],
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

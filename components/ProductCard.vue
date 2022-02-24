@@ -1,14 +1,14 @@
 <template>
-	<div class="ProductCard">
+	<div class="ProductCard" :data-price="`${product.price}`">
 		<div class="card">
 			<NuxtLink :to="`/catalog/${product.slug}`" class="img">
 				<img :src="product.img" :alt="product.name">
 			</NuxtLink>
-			<NuxtLink :to="`/catalog/${product.slug}`"><h3 class="name">{{product.name}}</h3></NuxtLink>
-			<div class="description">{{product.description.slice(0, 50)}}... <NuxtLink :to="`/catalog/${product.slug}`">Подробнее</NuxtLink></div>
+			<NuxtLink :to="`/catalog/${product.slug}`"><h2 class="name">{{product.name}}</h2></NuxtLink>
+			<div class="description h3">{{Math.round(product.price)}} руб</div>
 			<div class="buttons d-flex flex-column">
 				<button class="btn btn-red">Купить</button>
-				<NuxtLink :to="`/catalog/${product.slug}`" class="btn btn-red-outline">Подробнее</NuxtLink>
+				<!-- <NuxtLink :to="`/catalog/${product.slug}`" class="btn btn-red-outline">Подробнее</NuxtLink> -->
 			</div>
 		</div>
 	</div>
