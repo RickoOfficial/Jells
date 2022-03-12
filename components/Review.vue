@@ -20,7 +20,7 @@
 		}
 		
 		.review-top {
-			border-bottom: 1px solid var(--black);
+			border-bottom: 1px solid var(--accent);
 			padding-bottom: .5rem;
 			.review-name {
 				margin-right: 1rem;

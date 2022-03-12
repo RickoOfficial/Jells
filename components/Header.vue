@@ -16,6 +16,7 @@
 		position: sticky;
 		top: 1rem;
 		margin-bottom: 2rem;
+		z-index: 1;
 
 		header {
 			width: 80%;

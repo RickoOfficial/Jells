@@ -1,10 +1,9 @@
 :root {
-	--red: #F20519;
-	--purple: #5B48D9;
-	--light-mint: #CEF2F2;
-	--mint: #04D9C4;
-	--white: #F0F0F2;
-	--black: #1F1F26;
+	--accent: #5757FF;
+	--white: #F2F2F2;
+	--black: #1A1A1A;
+	--silver: #98A5B1;
+	--gray: #878787;
 }
 
 h1, .h1 { font-size: 2rem; font-weight: bold; }
@@ -14,6 +13,43 @@ h4, .h4 { font-size: 1rem; font-weight: bold; }
 h5, .h5 { font-size: 0.83rem; font-weight: bold; }
 h6, .h6 { font-size: 0.67rem; font-weight: bold; }
 
+.bg-black { background: var(--black); }
+.bg-white { background: var(--white); }
+.bg-accent { background: var(--accent); }
+.bg-silver { background: var(--silver); }
+.color-black { color: var(--black); }
+.color-white { color: var(--white); }
+.color-accent { color: var(--accent); }
+.color-silver { color: var(--silver); }
+.color-gray { color: var(--gray); }
+.size-fit { width: fit-content; height: fit-content; }
+.mt-16 { margin-top: 16px; }
+.mb-16 { margin-bottom: 16px; }
+.mr-16 { margin-right: 16px; }
+.ml-16 { margin-left: 16px; }
+.mt-24 { margin-top: 24px; }
+.mb-24 { margin-bottom: 24px; }
+.mr-24 { margin-right: 24px; }
+.ml-24 { margin-left: 24px; }
+.mt-32 { margin-top: 32px; }
+.mb-32 { margin-bottom: 32px; }
+.mr-32 { margin-right: 32px; }
+.ml-32 { margin-left: 32px; }
+.mt-48 { margin-top: 48px; }
+.mb-48 { margin-bottom: 48px; }
+.mr-48 { margin-right: 48px; }
+.ml-48 { margin-left: 48px; }
+.mt-64 { margin-top: 64px; }
+.mb-64 { margin-bottom: 64px; }
+.mr-64 { margin-right: 64px; }
+.ml-64 { margin-left: 64px; }
+.mt-164 { margin-top: 164px; }
+.mb-164 { margin-bottom: 164px; }
+.mr-164 { margin-right: 164px; }
+.ml-164 { margin-left: 164px; }
+.lh-100 { line-height: 100% !important; }
+.border-none { border: none; }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -21,11 +57,8 @@ h6, .h6 { font-size: 0.67rem; font-weight: bold; }
 	text-decoration: none;
 	color: var(--black);
 }
-html {
-	background: var(--white);
-}
 a { color: var(--black); transition: .2s; }
-a:hover { color: var(--red); }
+a:hover { color: var(--accent); }
 
 .btn {
 	padding: 1rem 2rem;
@@ -36,15 +69,15 @@ a:hover { color: var(--red); }
 	cursor: pointer;
 }
 
-.btn-red {
+.btn-accent {
 	color: var(--white);
-	background: var(--red);
-	border-color: var(--red);
+	background: var(--accent);
+	border-color: var(--accent);
 }
-.btn-red-outline {
+.btn-accent-outline {
 	color: var(--black);
 	background: var(--white);
-	border-color: var(--red);
+	border-color: var(--accent);
 }
 
 hr,
@@ -70,7 +103,7 @@ textarea {
 input:focus,
 textarea:focus {
 	background: #fff;
-	border: 1px solid var(--red);
+	border: 1px solid var(--accent);
 }
 
 textarea {
@@ -84,8 +117,8 @@ textarea {
 .noUi-horizontal { height: 10px !important; }
 .noUi-horizontal .noUi-handle { width: 1.5rem !important; height: 1.5rem !important; top: -.5rem !important; border: 1px solid #0003; border-radius: 50%; box-shadow: none; outline: none !important; }
 .noUi-handle:after, .noUi-handle:before { content: none !important; }
-.noUi-active { border-color: var(--red) !important; }
-.noUi-connect { background: var(--red) !important; }
+.noUi-active { border-color: var(--accent) !important; }
+.noUi-connect { background: var(--accent) !important; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

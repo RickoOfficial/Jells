@@ -58,7 +58,7 @@
 												></textarea>
 												<div id="invisible-div"></div>
 											</div>
-											<button class="btn btn-red">Отправить</button>
+											<button class="btn btn-accent">Отправить</button>
 										</form>
 									</div>
 									
@@ -102,7 +102,7 @@
 					cursor: pointer;
 					&.active {
 						border-color: var(--black);
-						border-bottom-color: var(--white);
+						border-bottom-color: #fff;
 					}
 				}
 			}

@@ -29,7 +29,7 @@
 										class="max" type="number"
 									>
 								</div>
-								<button @click="filterByPrice([min, max], false)" class="btn btn-red">Применить</button>
+								<button @click="filterByPrice([min, max], false)" class="btn btn-accent">Применить</button>
 							</div>
 						</div>
 					</div>
@@ -109,6 +109,8 @@ export default {
 		}
 	},
 	async asyncData({ $axios }) {
+		// const allProducts = this.$store.dispatch('products/getAllProducts')
+		// console.log(allProducts)
 		const data = await $axios.$get('http://localhost:3000/api/products')
 		return {products: data}
 	},

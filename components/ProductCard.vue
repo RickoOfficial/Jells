@@ -7,8 +7,8 @@
 			<NuxtLink :to="`/catalog/${product.slug}`"><h2 class="name">{{product.name}}</h2></NuxtLink>
 			<div class="description h3">{{Math.round(product.price)}} руб</div>
 			<div class="buttons d-flex flex-column">
-				<button class="btn btn-red">Купить</button>
-				<!-- <NuxtLink :to="`/catalog/${product.slug}`" class="btn btn-red-outline">Подробнее</NuxtLink> -->
+				<button class="btn btn-accent">Купить</button>
+				<!-- <NuxtLink :to="`/catalog/${product.slug}`" class="btn btn-accent-outline">Подробнее</NuxtLink> -->
 			</div>
 		</div>
 	</div>
